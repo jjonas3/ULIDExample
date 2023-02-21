@@ -9,19 +9,26 @@
         "deploy": "sst deploy",
         "remove": "sst remove",
         "console": "sst console",
-        "typecheck": "tsc --noEmit"
+        "typecheck": "tsc --noEmit",
+        "test": "sst bind \"vitest run\""
     },
     "devDependencies": {
         "@tsconfig/node16": "^1.0.3",
-        "aws-cdk-lib": "2.62.2",
+        "@types/uuid": "^9.0.0",
+        "aws-cdk-lib": "^2.62.2",
         "constructs": "10.1.156",
         "sst": "^2.0.23",
-        "typescript": "^4.9.5"
+        "typescript": "^4.9.5",
+        "vitest": "^0.28.5"
     },
     "workspaces": [
         "packages/*"
     ],
     "dependencies": {
-        "ulid": "^2.3.0"
+        "@paralleldrive/cuid2": "^2.2.0",
+        "aws-cdk": "^2.64.0",
+        "nanoid": "^4.0.1",
+        "ulid": "^2.3.0",
+        "uuid": "^9.0.0"
     }
 }
