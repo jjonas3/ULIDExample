@@ -26,9 +26,11 @@
     ],
     "dependencies": {
         "@paralleldrive/cuid2": "^2.2.0",
+        "@types/node": "^18.14.0",
         "@typescript-eslint/parser": "^5.53.0",
         "aws-cdk": "^2.64.0",
         "eslint": "^8.34.0",
+        "hashids": "^2.2.11",
         "ksuid": "^3.0.0",
         "nanoid": "^4.0.1",
         "prettier": "^2.8.4",

@@ -6,7 +6,9 @@ it('ULID test', (ctx) => {
   // prints name of the test
   console.log(ctx.meta.name);
   console.log('First',ulid());
+  sleep();
   console.log('Second',ulid());
+  sleep();
   console.log('Third',ulid());
  
 })
@@ -28,3 +30,14 @@ console.log('Fifth',ulid(150000)); // 000XAL6S41ACTAV9WEVGEMMVRC
 // Even if a lower timestamp is passed (or generated), it will preserve sort order
 console.log('sixth with lower seed',ulid(100000)); // 000XAL6S41ACTAV9WEVGEMMVRD
 })
+
+
+function sleep(){
+  setTimeout(() => 
+  {
+    
+  },
+  1000);
+
+}
+
