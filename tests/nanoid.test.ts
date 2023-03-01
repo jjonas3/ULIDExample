@@ -17,6 +17,8 @@ it('Nanoid  test', (ctx) => {
 
 it('Nanoid Custom alphabet', (ctx) => {
     console.log(ctx.meta.name);
-    const nanoid = customAlphabet('ABCDEF1234567890', 12);
+    const customAlpha ='ABCDEF1234567890'
+    const nanoid = customAlphabet(customAlpha, 12);
+    console.log('Custom alphabet',customAlpha);
     console.log('Nano ID, custom alphabet: ',nanoid());
 })
